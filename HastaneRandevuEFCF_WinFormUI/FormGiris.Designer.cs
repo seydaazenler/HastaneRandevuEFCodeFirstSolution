@@ -32,6 +32,8 @@ namespace HastaneRandevuEFCF_WinFormUI
             this.btnDoktorIslemleri = new System.Windows.Forms.Button();
             this.btnHastaIslemleri = new System.Windows.Forms.Button();
             this.btnRandevuIslemleri = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDoktorIslemleri
@@ -54,7 +56,6 @@ namespace HastaneRandevuEFCF_WinFormUI
             this.btnHastaIslemleri.TabIndex = 1;
             this.btnHastaIslemleri.Text = "HASTA İŞLEMLERİ FORMU";
             this.btnHastaIslemleri.UseVisualStyleBackColor = false;
-            
             // 
             // btnRandevuIslemleri
             // 
@@ -67,18 +68,39 @@ namespace HastaneRandevuEFCF_WinFormUI
             this.btnRandevuIslemleri.UseVisualStyleBackColor = false;
             this.btnRandevuIslemleri.Click += new System.EventHandler(this.btnRandevuIslemleri_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "label2";
+            // 
             // FormGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(465, 379);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRandevuIslemleri);
             this.Controls.Add(this.btnHastaIslemleri);
             this.Controls.Add(this.btnDoktorIslemleri);
             this.Name = "FormGiris";
             this.Text = "Form Giriş";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -87,5 +109,7 @@ namespace HastaneRandevuEFCF_WinFormUI
         private System.Windows.Forms.Button btnDoktorIslemleri;
         private System.Windows.Forms.Button btnHastaIslemleri;
         private System.Windows.Forms.Button btnRandevuIslemleri;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
